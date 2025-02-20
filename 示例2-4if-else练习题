@@ -1,0 +1,23 @@
+age = '20'
+num = 3
+while(num):
+    guess = input('请输入你猜测的年龄：')
+    if guess == age:
+        print('恭喜你，猜对了！')
+        break
+    else:
+        print('猜错了！')
+        num -= 1
+        if num == 0:
+            print('你的机会已用完！')
+            print("输入:Y,y继续,N,n退出:",end="")
+            str=input()
+            if str=='Y' or str=='y':
+                num=3
+            elif str == 'N' or str == 'n':
+                print('退出游戏！')
+                break
+            else:
+                print('输入错误！')
+                break
+            
